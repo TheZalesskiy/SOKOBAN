@@ -1,10 +1,15 @@
 package controller;
 
-
 import model.Direction;
 import model.GameObjects;
 import model.Model;
 import view.View;
+
+/**
+ * Controller class
+ * 04.08.2016
+ * Created by TheZalesskie
+ */
 
 public class Controller implements EventListener {
 

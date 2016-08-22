@@ -26,7 +26,7 @@ public class Player extends CollisionObject implements Movable {
         graphics.fillOval(leftUpperCornerX, leftUpperCornerY, getWidth(), getHeight());
 
     }
-    //должен смещать координаты объектов (x и y) на переданные значения
+    //should shift the object coordinates (x and y) on the submitted values
     @Override
     public void move(int x, int y) {
         this.setX(this.getX() + x);

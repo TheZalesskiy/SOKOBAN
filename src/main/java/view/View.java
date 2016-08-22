@@ -7,6 +7,12 @@ import model.GameObjects;
 
 import javax.swing.*;
 
+/**
+ * View class
+ * 04.08.2016
+ * Created by TheZalesskie
+ */
+
 public class View extends JFrame {
     private Controller controller;
     private Field field;

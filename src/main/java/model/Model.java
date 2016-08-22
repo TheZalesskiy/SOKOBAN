@@ -6,12 +6,12 @@ import java.nio.file.Paths;
 
 public class Model  {
 
-    //размер ячейки игрового поля
+    //the size of the playing field of the cell
     public static final int FIELD_SELL_SIZE = 20;
     private EventListener eventListener;
     private GameObjects gameObjects;
     private int currentLevel = 1;
-    private LevelLoader levelLoader = new LevelLoader(Paths.get("D:\\me\\java\\JavaRushHomeWork\\JavaRushHomeWork\\src\\com\\javarush\\test\\level34\\lesson15\\big01\\res\\levels.txt"));
+    private LevelLoader levelLoader = new LevelLoader(Paths.get("..\\res\\levels.txt");
 
     public void setEventListener(EventListener eventListener) {
         this.eventListener = eventListener;
@@ -79,14 +79,14 @@ public class Model  {
 
         Player player = gameObjects.getPlayer();
 
-        // найдем во что уперся игрок
+        // find what rested player
         GameObject  stoped = null;
         for (GameObject gameObject: gameObjects.getAll()){
             if (!(gameObject instanceof Player)&&!(gameObject instanceof Home) && player.isCollision(gameObject, direction)){
                 stoped = gameObject;
             }
         }
-        //свободное место или дом
+        //space or a house
         if ((stoped == null)){
             return false;
         }
